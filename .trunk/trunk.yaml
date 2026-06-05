@@ -42,7 +42,7 @@ lint:
           optional: true
       commands:
         # Set to pedantic so that zizmor will run its stale-action-refs audit rule
-        - name: zizmor-static-analysis
+        - name: lint
           run: zizmor --format=sarif --persona=pedantic ${target}
   ignore:
     - linters: [tofu]
